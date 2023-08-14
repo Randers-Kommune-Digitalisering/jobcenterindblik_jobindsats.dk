@@ -2,7 +2,7 @@ const Node = {
   "id": "8f670397d0d3fc87",
   "type": "group",
   "z": "971a7ae6df987a48",
-  "name": "Data serie Y30R21: Forventet og faktisk antal og andel fuldtidspersoner på offentlig forsørgelse",
+  "name": "Data - serie Y30R21: Forventet og faktisk antal og andel fuldtidspersoner på offentlig forsørgelse",
   "style": {
     "fill": "#bfdbef",
     "fill-opacity": "0.6",
@@ -19,7 +19,7 @@ const Node = {
     "feaecf1d12d0d512"
   ],
   "x": 14,
-  "y": 399,
+  "y": 459,
   "w": 952,
   "h": 142,
   "_order": 2

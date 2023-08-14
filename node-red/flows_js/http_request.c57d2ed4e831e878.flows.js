@@ -3,8 +3,8 @@ const Node = {
   "type": "http request",
   "z": "971a7ae6df987a48",
   "name": "",
-  "method": "GET",
-  "ret": "obj",
+  "method": "POST",
+  "ret": "txt",
   "paytoqs": "ignore",
   "url": "https://api.jobindsats.dk/v2/tables/y30r21/json/",
   "tls": "",
@@ -21,11 +21,11 @@ const Node = {
       "valueValue": "${TEST_API_KEY}"
     }
   ],
-  "x": 370,
+  "x": 290,
   "y": 280,
   "wires": [
     [
-      "bbb249d5ea503241"
+      "8de7a38fc93395b2"
     ]
   ],
   "_order": 4
