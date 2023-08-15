@@ -1,8 +1,7 @@
 const Node = {
-  "id": "5dc457a6f69dafb1",
+  "id": "5bc780f10b97b36e",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "86c049cc7675bde4",
   "name": "Create datatypes and generate the SQL statement",
   "rules": [
     {
@@ -16,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "sql",
       "pt": "msg",
-      "to": "/* Start of the CREATE TABLE statement */\t\"CREATE TABLE if not exists mytable (\" &  /* Join the column names and their corresponding data types, separated by a comma */ $join(\t   datatypes.(\t       /* Surround the column name with backticks to properly escape it */         '`' &\t       key & '` ' &          /* Add the data type for the column */         mysql_type     \t   ),\t   \", \" \t) &  /* End of the CREATE TABLE statement */ \");\"",
+      "to": "/* Start of the CREATE TABLE statement */\t\"CREATE TABLE myTable (\" &  /* Join the column names and their corresponding data types, separated by a comma */ $join(\t   datatypes.(\t       /* Surround the column name with backticks to properly escape it */         '`' &\t       key & '` ' &          /* Add the data type for the column */         mysql_type     \t   ),\t   \", \" \t) &  /* End of the CREATE TABLE statement */ \");\"",
       "tot": "jsonata"
     }
   ],
@@ -25,15 +24,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 930,
-  "y": 680,
+  "x": 210,
+  "y": 1000,
   "wires": [
-    [
-      "dfda186b986a9c86",
-      "8455047d4ac72736"
-    ]
+    []
   ],
-  "_order": 34
+  "_order": 38
 }
 
 module.exports = Node;

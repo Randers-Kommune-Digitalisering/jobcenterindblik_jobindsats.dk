@@ -2,6 +2,7 @@ const Node = {
   "id": "1957b3ad1141dc88",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "g": "86c049cc7675bde4",
   "name": "Remove data prefix from columns in jobcenter data",
   "rules": [
     {
@@ -17,15 +18,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 370,
-  "y": 1260,
+  "x": 510,
+  "y": 680,
   "wires": [
     [
-      "5bf05680c14a9e23"
+      "5dc457a6f69dafb1"
     ]
   ],
   "info": "",
-  "_order": 43
+  "_order": 36
 }
 
 Node.info = `

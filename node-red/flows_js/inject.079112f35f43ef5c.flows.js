@@ -2,6 +2,7 @@ const Node = {
   "id": "079112f35f43ef5c",
   "type": "inject",
   "z": "971a7ae6df987a48",
+  "g": "86c049cc7675bde4",
   "name": "Get flow.data",
   "props": [
     {
@@ -16,16 +17,14 @@ const Node = {
   "onceDelay": 0.1,
   "topic": "",
   "x": 190,
-  "y": 1180,
+  "y": 680,
   "wires": [
     [
-      "aaccf47ea480b774",
-      "409b509737675955",
       "1957b3ad1141dc88",
-      "5bf05680c14a9e23"
+      "aaccf47ea480b774"
     ]
   ],
-  "_order": 27
+  "_order": 29
 }
 
 module.exports = Node;

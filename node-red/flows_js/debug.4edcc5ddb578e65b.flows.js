@@ -2,8 +2,8 @@ const Node = {
   "id": "4edcc5ddb578e65b",
   "type": "debug",
   "z": "971a7ae6df987a48",
-  "name": "get flow.data",
-  "active": true,
+  "name": "verify flow.data",
+  "active": false,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
@@ -11,10 +11,10 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1120,
+  "x": 1130,
   "y": 600,
   "wires": [],
-  "_order": 26
+  "_order": 28
 }
 
 module.exports = Node;
