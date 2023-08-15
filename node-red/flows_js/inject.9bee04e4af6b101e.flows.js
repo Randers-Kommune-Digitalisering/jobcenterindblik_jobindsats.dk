@@ -17,7 +17,7 @@ const Node = {
   "payload": "{\"area\":\"*\",\"period\":[\"2020QMAT02\",\"2020QMAT04\",\"2021QMAT02\",\"2021QMAT04\",\"2022QMAT02\",\"2022QMAT04\"],\"_ygrp_y30r21\":[\"Ydelsesgrupper i alt\",\"A-dagpenge mv.\",\"Sygedagpenge mv.\",\"Kontanthjælp mv.\"]}",
   "payloadType": "json",
   "x": 130,
-  "y": 500,
+  "y": 540,
   "wires": [
     [
       "eeae05ab42343103"
