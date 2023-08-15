@@ -2,6 +2,7 @@ const Node = {
   "id": "8de7a38fc93395b2",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "g": "3af220965c158c58",
   "name": "Konverterer streng til JSON-streng",
   "rules": [
     {
@@ -17,8 +18,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 540,
-  "y": 320,
+  "x": 640,
+  "y": 400,
   "wires": [
     [
       "d28d4eeb0d5cb2e6"

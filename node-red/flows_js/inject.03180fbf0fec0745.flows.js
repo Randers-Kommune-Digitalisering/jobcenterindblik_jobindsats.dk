@@ -2,6 +2,7 @@ const Node = {
   "id": "03180fbf0fec0745",
   "type": "inject",
   "z": "971a7ae6df987a48",
+  "g": "3af220965c158c58",
   "name": "timestamp",
   "props": [
     {
@@ -15,14 +16,14 @@ const Node = {
   "topic": "",
   "payload": "",
   "payloadType": "date",
-  "x": 120,
-  "y": 320,
+  "x": 140,
+  "y": 340,
   "wires": [
     [
       "c57d2ed4e831e878"
     ]
   ],
-  "_order": 3
+  "_order": 18
 }
 
 module.exports = Node;

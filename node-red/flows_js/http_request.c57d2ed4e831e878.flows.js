@@ -2,7 +2,8 @@ const Node = {
   "id": "c57d2ed4e831e878",
   "type": "http request",
   "z": "971a7ae6df987a48",
-  "name": "",
+  "g": "3af220965c158c58",
+  "name": "Http-request (tilgælgelige dataperioder)",
   "method": "POST",
   "ret": "txt",
   "paytoqs": "ignore",
@@ -21,14 +22,14 @@ const Node = {
       "valueValue": "${TEST_API_KEY}"
     }
   ],
-  "x": 290,
-  "y": 320,
+  "x": 400,
+  "y": 340,
   "wires": [
     [
       "8de7a38fc93395b2"
     ]
   ],
-  "_order": 4
+  "_order": 19
 }
 
 module.exports = Node;

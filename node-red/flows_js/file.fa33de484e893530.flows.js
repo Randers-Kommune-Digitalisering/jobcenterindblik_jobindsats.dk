@@ -10,12 +10,12 @@ const Node = {
   "createDir": true,
   "overwriteFile": "delete",
   "encoding": "utf8",
-  "x": 380,
-  "y": 600,
+  "x": 400,
+  "y": 660,
   "wires": [
     []
   ],
-  "_order": 13
+  "_order": 11
 }
 
 module.exports = Node;
