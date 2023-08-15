@@ -7,14 +7,14 @@ const Node = {
   "property": "payload",
   "action": "obj",
   "pretty": false,
-  "x": 840,
-  "y": 460,
+  "x": 1040,
+  "y": 340,
   "wires": [
     [
-      "e41738029d1d1c23"
+      "2c7ab83f89bedebe"
     ]
   ],
-  "_order": 20
+  "_order": 22
 }
 
 module.exports = Node;

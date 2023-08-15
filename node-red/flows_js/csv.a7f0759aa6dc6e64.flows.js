@@ -14,7 +14,7 @@ const Node = {
   "strings": true,
   "include_empty_strings": true,
   "include_null_values": true,
-  "x": 610,
+  "x": 650,
   "y": 100,
   "wires": [
     [
@@ -22,7 +22,7 @@ const Node = {
       "c7ce97caf275af32"
     ]
   ],
-  "_order": 7
+  "_order": 9
 }
 
 module.exports = Node;
