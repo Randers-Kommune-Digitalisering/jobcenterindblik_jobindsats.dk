@@ -4,7 +4,7 @@ const Node = {
   "z": "971a7ae6df987a48",
   "d": true,
   "g": "c6d2a8be4c1cd89c",
-  "name": "env vars",
+  "name": "Get database settings from enviroment vars",
   "rules": [
     {
       "t": "set",
@@ -52,8 +52,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 640,
-  "y": 980,
+  "x": 710,
+  "y": 940,
   "wires": [
     [
       "dbfc95971fd2d70b",
