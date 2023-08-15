@@ -1,21 +1,20 @@
 const Node = {
-  "id": "a992a34c30335c0a",
+  "id": "4edcc5ddb578e65b",
   "type": "debug",
   "z": "971a7ae6df987a48",
-  "g": "8f670397d0d3fc87",
-  "name": "msg.payload",
-  "active": false,
+  "name": "get flow.data",
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "$flowContext(\"data\")",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 870,
-  "y": 520,
+  "x": 1120,
+  "y": 600,
   "wires": [],
-  "_order": 17
+  "_order": 26
 }
 
 module.exports = Node;

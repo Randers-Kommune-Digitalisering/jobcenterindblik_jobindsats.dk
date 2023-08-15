@@ -1,15 +1,15 @@
 const Node = {
-  "id": "8de7a38fc93395b2",
+  "id": "2ef7eb5951d9c7f5",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "3af220965c158c58",
-  "name": "Konverterer streng til JSON-streng",
+  "d": true,
+  "name": "Rens komma fra kolonner",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "columns",
       "pt": "msg",
-      "to": "$substring(payload,1,$length(payload)-1)",
+      "to": "$substring(columns, 0, $length(columns) - 2)",
       "tot": "jsonata"
     }
   ],
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 760,
-  "y": 340,
+  "x": 570,
+  "y": 1160,
   "wires": [
     [
-      "d28d4eeb0d5cb2e6"
+      "87fdfac3f0d99186"
     ]
   ],
-  "_order": 24
+  "_order": 39
 }
 
 module.exports = Node;
