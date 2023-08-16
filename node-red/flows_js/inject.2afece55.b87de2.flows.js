@@ -1,23 +1,23 @@
 const Node = {
-  "id": "adb40188092da3f1",
+  "id": "2afece55.b87de2",
   "type": "inject",
   "z": "971a7ae6df987a48",
   "name": "",
-  "props": [],
   "repeat": "",
   "crontab": "",
   "once": false,
   "onceDelay": 0.1,
   "topic": "",
-  "x": 45,
-  "y": 640,
+  "payload": "",
+  "payloadType": "date",
+  "x": 440,
+  "y": 1380,
   "wires": [
     [
-      "545c90b81b148523"
+      "cfca3863.d961d8"
     ]
   ],
-  "l": false,
-  "_order": 34
+  "_order": 48
 }
 
 module.exports = Node;

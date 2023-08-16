@@ -1,14 +1,15 @@
 const Node = {
-  "id": "115f04280bda94e6",
+  "id": "1a52460a0033b633",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Shorten column names",
+  "g": "ac68593c7f39b444",
+  "name": "Transform number strings",
   "rules": [
     {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "$substringAfter(payload, \": \")",
+      "to": "$type(payload) = \"string\" and $match(payload, /^[0-9]+,[0-9]+$/) ? $number($replace(payload, \",\", \".\")) : payload",
       "tot": "jsonata"
     }
   ],
@@ -17,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 810,
-  "y": 680,
+  "x": 690,
+  "y": 640,
   "wires": [
     [
-      "c45f4b3f357eade1"
+      "483dacdd0c528fd4"
     ]
   ],
-  "_order": 48
+  "_order": 45
 }
 
 module.exports = Node;

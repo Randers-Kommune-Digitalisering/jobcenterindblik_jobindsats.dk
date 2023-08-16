@@ -1,8 +1,9 @@
 const Node = {
-  "id": "775c7da426efaf10",
+  "id": "a8fb34a4fbde164d",
   "type": "join",
   "z": "971a7ae6df987a48",
-  "name": "",
+  "g": "ac68593c7f39b444",
+  "name": "Recreate array",
   "mode": "auto",
   "build": "object",
   "property": "payload",
@@ -10,18 +11,22 @@ const Node = {
   "key": "topic",
   "joiner": "\\n",
   "joinerType": "str",
-  "accumulate": "false",
+  "accumulate": true,
   "timeout": "",
   "count": "",
   "reduceRight": false,
-  "x": 1030,
+  "reduceExp": "",
+  "reduceInit": "",
+  "reduceInitType": "",
+  "reduceFixup": "",
+  "x": 1000,
   "y": 680,
   "wires": [
     [
-      "ddad337e2a032046"
+      "9c712a1d184fa0e4"
     ]
   ],
-  "_order": 50
+  "_order": 75
 }
 
 module.exports = Node;
