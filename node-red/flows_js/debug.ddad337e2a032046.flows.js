@@ -1,20 +1,20 @@
 const Node = {
-  "id": "4edcc5ddb578e65b",
+  "id": "ddad337e2a032046",
   "type": "debug",
   "z": "971a7ae6df987a48",
-  "name": "verify flow.data",
-  "active": false,
+  "name": "debug 3",
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "$flowContext(\"data\")",
-  "targetType": "jsonata",
+  "complete": "true",
+  "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1130,
-  "y": 600,
+  "x": 1100,
+  "y": 800,
   "wires": [],
-  "_order": 28
+  "_order": 34
 }
 
 module.exports = Node;

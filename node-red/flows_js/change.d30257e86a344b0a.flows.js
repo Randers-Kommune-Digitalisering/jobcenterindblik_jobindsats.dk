@@ -1,5 +1,5 @@
 const Node = {
-  "id": "3b44910af8738fc8",
+  "id": "d30257e86a344b0a",
   "type": "change",
   "z": "971a7ae6df987a48",
   "name": "Store data in flow.data",
@@ -17,15 +17,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 900,
-  "y": 600,
+  "x": 1160,
+  "y": 460,
   "wires": [
     [
-      "4edcc5ddb578e65b"
+      "81e1189cb1c9435f"
     ]
   ],
   "icon": "node-red/db.svg",
-  "_order": 27
+  "_order": 33
 }
 
 module.exports = Node;

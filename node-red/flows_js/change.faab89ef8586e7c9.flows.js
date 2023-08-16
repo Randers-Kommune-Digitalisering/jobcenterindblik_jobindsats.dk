@@ -1,9 +1,9 @@
 const Node = {
-  "id": "7ae759fcca49ed12",
+  "id": "faab89ef8586e7c9",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "c6d2a8be4c1cd89c",
-  "name": "clean",
+  "g": "fe42eba3f9f607b1",
+  "name": "clean up secrets",
   "rules": [
     {
       "t": "delete",
@@ -41,14 +41,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1250,
-  "y": 840,
+  "x": 880,
+  "y": 800,
   "wires": [
     [
-      "627cb1595da9432f"
+      "ddad337e2a032046"
     ]
   ],
-  "_order": 33
+  "_order": 38
 }
 
 module.exports = Node;

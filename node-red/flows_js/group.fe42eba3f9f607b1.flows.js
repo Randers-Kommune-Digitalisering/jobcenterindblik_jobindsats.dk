@@ -1,8 +1,8 @@
 const Node = {
-  "id": "c6d2a8be4c1cd89c",
+  "id": "fe42eba3f9f607b1",
   "type": "group",
   "z": "971a7ae6df987a48",
-  "name": "Database connector",
+  "name": "Create database for msg.data",
   "style": {
     "stroke": "none",
     "stroke-opacity": "0.5",
@@ -12,15 +12,17 @@ const Node = {
     "color": "#3f3f3f"
   },
   "nodes": [
-    "dbfc95971fd2d70b",
-    "91f1f305dad455c8",
-    "dbfc95971fd2d70b",
-    "7ae759fcca49ed12"
+    "d3e1ea556ffa8a03",
+    "40b0404718cae26b",
+    "d3e1ea556ffa8a03",
+    "faab89ef8586e7c9",
+    "47cbcf45e4a264f4",
+    "ded32277f3dd7c11"
   ],
-  "x": 794,
-  "y": 759,
-  "w": 532,
-  "h": 122,
+  "x": 74,
+  "y": 747,
+  "w": 912,
+  "h": 106,
   "_order": 4
 }
 

@@ -1,9 +1,9 @@
 const Node = {
-  "id": "5dc457a6f69dafb1",
+  "id": "47cbcf45e4a264f4",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "86c049cc7675bde4",
-  "name": "Create datatypes and generate the SQL statement",
+  "g": "fe42eba3f9f607b1",
+  "name": "Create datatypes and generate \\n the SQL statement from msg.data",
   "rules": [
     {
       "t": "set",
@@ -25,15 +25,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 930,
-  "y": 680,
+  "x": 240,
+  "y": 800,
   "wires": [
     [
-      "dfda186b986a9c86",
-      "8455047d4ac72736"
+      "40b0404718cae26b"
     ]
   ],
-  "_order": 34
+  "_order": 39
 }
 
 module.exports = Node;
