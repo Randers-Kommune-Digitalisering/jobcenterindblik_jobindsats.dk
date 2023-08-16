@@ -14,7 +14,7 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "data",
+      "p": "payload",
       "pt": "msg",
       "to": "data",
       "tot": "flow",
@@ -30,7 +30,7 @@ const Node = {
   "y": 640,
   "wires": [
     [
-      "f01d3faac64639d8"
+      "93f155aea1f3aa43"
     ]
   ],
   "_order": 41

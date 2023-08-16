@@ -2,6 +2,7 @@ const Node = {
   "id": "47cbcf45e4a264f4",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "d": true,
   "g": "fe42eba3f9f607b1",
   "name": "Create datatypes and generate \\n the SQL statement from msg.data",
   "rules": [
