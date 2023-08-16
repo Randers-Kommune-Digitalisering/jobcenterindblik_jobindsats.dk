@@ -1,8 +1,7 @@
 const Node = {
-  "id": "93f155aea1f3aa43",
+  "id": "d07dbe2c91a28656",
   "type": "split",
   "z": "971a7ae6df987a48",
-  "g": "dea84c3a244af9e9",
   "name": "",
   "splt": "\\n",
   "spltType": "str",
@@ -10,15 +9,14 @@ const Node = {
   "arraySpltType": "len",
   "stream": false,
   "addname": "",
-  "x": 410,
+  "x": 750,
   "y": 640,
   "wires": [
     [
-      "f01d3faac64639d8",
-      "ddad337e2a032046"
+      "115f04280bda94e6"
     ]
   ],
-  "_order": 46
+  "_order": 47
 }
 
 module.exports = Node;
