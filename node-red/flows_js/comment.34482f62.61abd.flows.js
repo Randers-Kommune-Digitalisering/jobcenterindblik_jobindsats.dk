@@ -1,13 +1,13 @@
 const Node = {
-  "id": "48956e14.79b86",
+  "id": "34482f62.61abd",
   "type": "comment",
   "z": "971a7ae6df987a48",
-  "name": "Split object to key/value pairs",
+  "name": "↓ reduce sequence to average value",
   "info": "",
-  "x": 440,
-  "y": 1720,
+  "x": 1070,
+  "y": 1380,
   "wires": [],
-  "_order": 69
+  "_order": 60
 }
 
 module.exports = Node;

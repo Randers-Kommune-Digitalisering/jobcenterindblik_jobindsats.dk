@@ -52,11 +52,9 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 500,
-  "y": 960,
+  "y": 1020,
   "wires": [
-    [
-      "d3e1ea556ffa8a03"
-    ]
+    []
   ],
   "_order": 36
 }

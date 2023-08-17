@@ -14,14 +14,14 @@ const Node = {
   "nodes": [
     "c45f4b3f357eade1",
     "1a52460a0033b633",
-    "55e83830abbb939a",
     "483dacdd0c528fd4",
+    "a8fb34a4fbde164d",
     "84e09f687ce4f10e",
-    "a8fb34a4fbde164d"
+    "55e83830abbb939a"
   ],
-  "x": 394,
+  "x": 434,
   "y": 599,
-  "w": 712,
+  "w": 492,
   "h": 122,
   "_order": 7
 }

@@ -1,30 +1,26 @@
 const Node = {
-  "id": "f30df13c.19475",
+  "id": "14318520.397a9b",
   "type": "template",
   "z": "971a7ae6df987a48",
   "name": "data",
   "field": "payload",
   "fieldType": "msg",
-  "format": "json",
+  "format": "text",
   "syntax": "plain",
   "template": "",
   "output": "json",
-  "x": 590,
-  "y": 1640,
+  "x": 700,
+  "y": 1580,
   "wires": [
     [
-      "71d7c0e0.c0316"
+      "41d85177.9b6f1"
     ]
   ],
-  "_order": 61
+  "_order": 63
 }
 
 Node.template = `
-[ 
-    "Apple",
-    "Orange",
-    "Banana"
-]
+[0,1,5]
 `
 
 module.exports = Node;

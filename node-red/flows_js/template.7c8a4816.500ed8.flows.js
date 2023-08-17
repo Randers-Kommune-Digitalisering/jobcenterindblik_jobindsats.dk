@@ -1,5 +1,5 @@
 const Node = {
-  "id": "bdeb8c21.1c6b7",
+  "id": "7c8a4816.500ed8",
   "type": "template",
   "z": "971a7ae6df987a48",
   "name": "data",
@@ -9,22 +9,29 @@ const Node = {
   "syntax": "plain",
   "template": "",
   "output": "json",
-  "x": 590,
-  "y": 1760,
+  "x": 700,
+  "y": 1420,
   "wires": [
     [
-      "c0d43ff4.291d8"
+      "7f64da1f.611014"
     ]
   ],
-  "_order": 67
+  "_order": 55
 }
 
 Node.template = `
-{ 
-    "Apple": 80,
-    "Orange": 100,
-    "Banana": 50
-}
+[
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+]
 `
 
 module.exports = Node;

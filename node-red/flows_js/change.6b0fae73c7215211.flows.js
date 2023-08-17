@@ -1,15 +1,14 @@
 const Node = {
-  "id": "483dacdd0c528fd4",
+  "id": "6b0fae73c7215211",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "ac68593c7f39b444",
-  "name": "Shorten column names",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "parts.key",
+      "p": "len",
       "pt": "msg",
-      "to": "$substringAfter(parts.key, \": \")",
+      "to": "$number($length(payload))",
       "tot": "jsonata"
     }
   ],
@@ -18,14 +17,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 670,
-  "y": 680,
+  "x": 690,
+  "y": 1320,
   "wires": [
-    [
-      "c45f4b3f357eade1"
-    ]
+    []
   ],
-  "_order": 48
+  "_order": 52
 }
 
 module.exports = Node;

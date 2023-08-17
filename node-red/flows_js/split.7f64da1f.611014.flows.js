@@ -1,22 +1,22 @@
 const Node = {
-  "id": "bdfa12b9.3fbbc",
+  "id": "7f64da1f.611014",
   "type": "split",
   "z": "971a7ae6df987a48",
   "name": "",
-  "splt": "4",
-  "spltType": "len",
+  "splt": "\\n",
+  "spltType": "str",
   "arraySplt": 1,
   "arraySpltType": "len",
   "stream": false,
   "addname": "",
-  "x": 730,
-  "y": 1500,
+  "x": 840,
+  "y": 1420,
   "wires": [
     [
-      "debf23bb.c0245"
+      "5fde318f.23897"
     ]
   ],
-  "_order": 53
+  "_order": 61
 }
 
 module.exports = Node;

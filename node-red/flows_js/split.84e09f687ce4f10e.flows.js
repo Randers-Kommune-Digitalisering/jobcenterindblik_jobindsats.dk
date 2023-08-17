@@ -3,21 +3,22 @@ const Node = {
   "type": "split",
   "z": "971a7ae6df987a48",
   "g": "ac68593c7f39b444",
-  "name": "",
+  "name": "Split array into objects",
   "splt": "\\n",
   "spltType": "str",
   "arraySplt": 1,
   "arraySpltType": "len",
   "stream": false,
   "addname": "",
-  "x": 470,
+  "x": 475,
   "y": 640,
   "wires": [
     [
       "55e83830abbb939a"
     ]
   ],
-  "_order": 74
+  "l": false,
+  "_order": 49
 }
 
 module.exports = Node;

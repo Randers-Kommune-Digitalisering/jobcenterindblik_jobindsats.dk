@@ -1,28 +1,29 @@
 const Node = {
-  "id": "7f791b7d.94cad4",
+  "id": "8139dcd5.2300d",
   "type": "template",
   "z": "971a7ae6df987a48",
   "name": "data",
   "field": "payload",
   "fieldType": "msg",
-  "format": "handlebars",
+  "format": "text",
   "syntax": "plain",
   "template": "",
   "output": "str",
-  "x": 590,
-  "y": 1500,
+  "x": 700,
+  "y": 1900,
   "wires": [
     [
-      "bdfa12b9.3fbbc"
+      "c6ff515e.f95fd"
     ]
   ],
-  "_order": 55
+  "_order": 79
 }
 
 Node.template = `
 Apple
 Orange
 Banana
+Kiwi
 `
 
 module.exports = Node;
