@@ -29,11 +29,6 @@ const Node = {
       "t": "delete",
       "p": "password",
       "pt": "msg"
-    },
-    {
-      "t": "delete",
-      "p": "sql",
-      "pt": "msg"
     }
   ],
   "action": "",
@@ -41,10 +36,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1100,
+  "x": 1140,
   "y": 900,
   "wires": [
-    []
+    [
+      "12cbc373b3d1c5fb"
+    ]
   ],
   "_order": 53
 }

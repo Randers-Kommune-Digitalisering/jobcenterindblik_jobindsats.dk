@@ -3,7 +3,7 @@ const Node = {
   "type": "delay",
   "z": "971a7ae6df987a48",
   "g": "f08f7a1f88557ecd",
-  "name": "",
+  "name": "Wait for DROP \\n to be sent to db",
   "pauseType": "delay",
   "timeout": "1",
   "timeoutUnits": "seconds",
@@ -16,7 +16,7 @@ const Node = {
   "drop": false,
   "allowrate": false,
   "outputs": 1,
-  "x": 240,
+  "x": 260,
   "y": 900,
   "wires": [
     [

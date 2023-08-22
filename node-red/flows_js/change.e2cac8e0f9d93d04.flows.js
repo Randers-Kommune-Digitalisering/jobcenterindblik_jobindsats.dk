@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "sql",
       "pt": "msg",
-      "to": "\"INSERT INTO \" & tablename & \" (\" & $join($keys(payload[0]), \", \") & \") VALUES \" &\t $join(\t   payload.$map(\t       function($v, $i, $a) {\t           return \"(\" & $join(\t               $v.$map(\t                   function($v, $i, $a) { return \"'\" & $v & \"'\"}\t               ),\t               \", \"\t           ) & \")\"\t       }\t   ),\t   \", \"\t)",
+      "to": "(\t  $columns := payload[0].$keys() ~> $map(function($v) { \"`\" & $v & \"`\" }) ~> $join(\", \");\t\t  $values := payload ~> $reduce(function($acc, $v) { \t  $acc & \"(\" & $v.$each(function($v) { $v }) & \"), \"\t}, \"\");\t\t  \"INSERT INTO \" & tablename & \" ( \" & $columns & \") VALUES \" & $values\t)",
       "tot": "jsonata"
     }
   ],
