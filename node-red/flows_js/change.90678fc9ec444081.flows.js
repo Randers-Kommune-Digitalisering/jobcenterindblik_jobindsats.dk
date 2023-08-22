@@ -1,9 +1,9 @@
 const Node = {
-  "id": "f17b2add1f30c0d6",
+  "id": "90678fc9ec444081",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "6b46da49efc621f3",
-  "name": "Get database settings \\n from enviroment vars",
+  "g": "511acc4de97f097a",
+  "name": "Get database settings \\n from enviroment vars \\n and set query DROP TABLE Y30R21",
   "rules": [
     {
       "t": "set",
@@ -44,6 +44,13 @@ const Node = {
       "to": "DB_PASS",
       "tot": "env",
       "dc": true
+    },
+    {
+      "t": "set",
+      "p": "sql",
+      "pt": "msg",
+      "to": "DROP TABLE Y30R21",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -51,14 +58,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 500,
-  "y": 1160,
+  "x": 610,
+  "y": 1080,
   "wires": [
     [
-      "dde559e5cfa8da25"
+      "0a5ac97b558a0ce3"
     ]
   ],
-  "_order": 41
+  "_order": 53
 }
 
 module.exports = Node;

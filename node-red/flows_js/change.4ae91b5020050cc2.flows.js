@@ -28,13 +28,13 @@ const Node = {
   "y": 680,
   "wires": [
     [
-      "6c62d497ca0b17af",
-      "0e146a3063d45d0a"
+      "0e146a3063d45d0a",
+      "ff0731ad9918635e"
     ]
   ],
   "icon": "node-red/timer.svg",
   "l": false,
-  "_order": 87
+  "_order": 47
 }
 
 module.exports = Node;

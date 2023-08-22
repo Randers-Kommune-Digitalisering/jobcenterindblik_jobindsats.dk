@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "$type(payload) = \"string\" and $match(payload, /^[0-9]+,[0-9]+$/) ? $number($replace(payload, \",\", \".\")) : payload",
+      "to": "    $type(payload) = \"string\" and $match(payload, /^[0-9]+,[0-9]+$/) ? $number($replace(payload, \",\", \".\")) : payload",
       "tot": "jsonata"
     }
   ],
@@ -25,7 +25,7 @@ const Node = {
       "483dacdd0c528fd4"
     ]
   ],
-  "_order": 45
+  "_order": 40
 }
 
 module.exports = Node;

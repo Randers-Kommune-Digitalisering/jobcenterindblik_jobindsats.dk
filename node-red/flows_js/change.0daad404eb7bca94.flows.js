@@ -1,9 +1,9 @@
 const Node = {
-  "id": "40b0404718cae26b",
+  "id": "0daad404eb7bca94",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "fe42eba3f9f607b1",
-  "name": "Get database settings \\n from enviroment vars",
+  "g": "511acc4de97f097a",
+  "name": "Get database settings \\n from enviroment vars \\n and set query SHOW TABLES",
   "rules": [
     {
       "t": "set",
@@ -44,6 +44,13 @@ const Node = {
       "to": "DB_PASS",
       "tot": "env",
       "dc": true
+    },
+    {
+      "t": "set",
+      "p": "sql",
+      "pt": "msg",
+      "to": "SHOW TABLES",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -51,14 +58,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 520,
-  "y": 820,
+  "x": 590,
+  "y": 980,
   "wires": [
     [
-      "d3e1ea556ffa8a03"
+      "0a5ac97b558a0ce3"
     ]
   ],
-  "_order": 35
+  "_order": 49
 }
 
 module.exports = Node;

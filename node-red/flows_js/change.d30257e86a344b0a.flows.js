@@ -17,7 +17,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1160,
+  "x": 1180,
   "y": 460,
   "wires": [
     [
@@ -25,7 +25,7 @@ const Node = {
     ]
   ],
   "icon": "node-red/db.svg",
-  "_order": 33
+  "_order": 32
 }
 
 module.exports = Node;

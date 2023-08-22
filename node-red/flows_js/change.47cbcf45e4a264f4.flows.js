@@ -9,14 +9,14 @@ const Node = {
       "t": "set",
       "p": "datatypes",
       "pt": "msg",
-      "to": "/* WARNING: The input objects must be uniform for this to work */\t/* Map over the first object in the input array */\t$map(payload[0], function($value, $key) {\t    /* Iterate over the key-value pairs of the object */\t    $each($value, function($value, $key) {\t        /* Create a new object with the key and MariaDB type */\t        {\t            \"key\": $key,\t            /* Map the detected datatype to a valid MariaDB datatype using a lookup table */\t            \"mariadb_type\": $lookup({\t                /* If the value is a string, set the MariaDB type to VARCHAR with a length equal to the maximum length of the values in the data */\t                \"string\": \"VARCHAR(\" & $max($map(payload, function($v, $k, $i) { $length($v[$key]) })) & \")\",\t                /* If the value is a number and is a whole number, set the MariaDB type to DOUBLE. Otherwise, set it to FLOAT */\t                \"number\": $floor($value) = $value ? \"DOUBLE\" : \"FLOAT\",\t                /* If the value is a boolean, set the MariaDB type to BOOLEAN */\t                \"boolean\": \"BOOLEAN\",\t                /* If the value is null, set the MariaDB type to NULL */\t                \"null\": \"NULL\"\t            }, $type($value))\t        }\t    })\t})",
+      "to": "$map(\t   payload[0],\t   function($v, $k) {\t       $each(\t           $v,\t           function($value, $key) {{\t    \"key\": $key,\t    \"mariadb_datatype\": \t    /* Check the type of the value */\t    $value ~> $type() = \"string\" ? \"VARCHAR(255)\" :\t    /* Check if the value is a number */\t    $value ~> $type() = \"number\" ? (\t        /* Check if the number is an integer */\t        $value ~> $floor() = $ ? \"INT\" :\t        /* Check if the number is a decimal */\t        $value ~> $floor() != $ ? \"DECIMAL(10,2)\" : undefined\t    ) :\t    $value ~> $type() = \"boolean\" ? \"BOOLEAN\" :\t    $value ~> $type() = \"null\" ? \"NULL\" :\t    /* Check for ISO dates */\t    /^([0-9]{4})(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)(3[01]|[12][0-9]|0[1-9])$|^(3[01]|[12][0-9]|0[1-9])(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)([0-9]{4})$/ ? \"DATE\" : undefined\t}            \t    }\t       )\t}\t)\t",
       "tot": "jsonata"
     },
     {
       "t": "set",
       "p": "sql",
       "pt": "msg",
-      "to": "/* Start of the CREATE TABLE statement */\t\"CREATE TABLE if not exists mytable (\" &  /* Join the column names and their corresponding data types, separated by a comma */ $join(\t   datatypes.(\t       /* Surround the column name with backticks to properly escape it */         '`' &\t       key & '` ' &          /* Add the data type for the column */         mysql_type     \t   ),\t   \", \" \t) &  /* End of the CREATE TABLE statement */ \");\"",
+      "to": "/* This creates a SQL statement to create a database table. \t/* It depends on a valid datatypes input  */ \t\"CREATE TABLE if not exists \" & tablename & \" (\" & $join(\t   datatypes.('`' & key & '` ' & mariadb_datatype),\t   \", \"\t) & \");\"\t",
       "tot": "jsonata"
     }
   ],
@@ -25,14 +25,27 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 240,
-  "y": 1020,
+  "x": 260,
+  "y": 820,
   "wires": [
     [
       "40b0404718cae26b"
     ]
   ],
-  "_order": 38
+  "info": "",
+  "_order": 37
 }
+
+Node.info = `
+This code takes an array of objects (the ‘payload’) and generates a new array of objects where each object has a ‘key’ property (the original key)
+ and a ‘mariadb_type’ property (the corresponding MariaDB data type).
+
+The data type is determined based on the type of the original value and whether it matches certain conditions 
+(e.g., if it’s a string, number, boolean, null, or ISO date). 
+ - For strings, a VARCHAR data type with a length of 255 is used. 
+ - For numbers, either DOUBLE or FLOAT is used depending on whether it’s a whole number or not. 
+ - For booleans and null values, BOOLEAN and NULL are used respectively.
+ - Finally, if the value matches an ISO date format, DATE is used.
+`
 
 module.exports = Node;
