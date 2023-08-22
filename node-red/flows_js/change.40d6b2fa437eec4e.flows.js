@@ -1,8 +1,8 @@
 const Node = {
-  "id": "40b0404718cae26b",
+  "id": "40d6b2fa437eec4e",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "fe42eba3f9f607b1",
+  "g": "f08f7a1f88557ecd",
   "name": "Get database settings \\n from enviroment vars",
   "rules": [
     {
@@ -51,14 +51,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 520,
-  "y": 820,
+  "x": 740,
+  "y": 900,
   "wires": [
     [
-      "d3e1ea556ffa8a03"
+      "d263e0e74d046899"
     ]
   ],
-  "_order": 35
+  "_order": 52
 }
 
 module.exports = Node;

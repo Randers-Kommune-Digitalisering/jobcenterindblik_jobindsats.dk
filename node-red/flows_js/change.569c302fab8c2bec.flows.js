@@ -1,9 +1,9 @@
 const Node = {
-  "id": "47cbcf45e4a264f4",
+  "id": "569c302fab8c2bec",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "fe42eba3f9f607b1",
-  "name": "Create datatypes and generate \\n the SQL statement from msg.data",
+  "g": "f08f7a1f88557ecd",
+  "name": "Create datatypes and create \\n the SQL CREATE TABLE \\n statement",
   "rules": [
     {
       "t": "set",
@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "sql",
       "pt": "msg",
-      "to": "/* This creates a SQL statement to create a database table. \t/* It depends on a valid datatypes input  */ \t\"CREATE TABLE if not exists \" & tablename & \" (\" & $join(\t   datatypes.('`' & key & '` ' & mariadb_datatype),\t   \", \"\t) & \");\"\t",
+      "to": "/* This function composes a SQL statement string that creates the database table. It depends on a valid datatypes input  */ \t\"CREATE TABLE \" & tablename & \" (\" & $join(\t   datatypes.('`' & key & '` ' & mariadb_datatype),\t   \", \"\t) & \");\"\t",
       "tot": "jsonata"
     }
   ],
@@ -25,15 +25,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 260,
-  "y": 820,
+  "x": 460,
+  "y": 900,
   "wires": [
     [
-      "40b0404718cae26b"
+      "40d6b2fa437eec4e"
     ]
   ],
   "info": "",
-  "_order": 37
+  "_order": 54
 }
 
 Node.info = `

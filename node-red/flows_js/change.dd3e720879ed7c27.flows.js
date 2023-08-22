@@ -1,8 +1,8 @@
 const Node = {
-  "id": "faab89ef8586e7c9",
+  "id": "dd3e720879ed7c27",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "g": "fe42eba3f9f607b1",
+  "g": "f08f7a1f88557ecd",
   "name": "clean up secrets",
   "rules": [
     {
@@ -41,14 +41,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 900,
-  "y": 820,
+  "x": 1100,
+  "y": 900,
   "wires": [
-    [
-      "9c712a1d184fa0e4"
-    ]
+    []
   ],
-  "_order": 36
+  "_order": 53
 }
 
 module.exports = Node;

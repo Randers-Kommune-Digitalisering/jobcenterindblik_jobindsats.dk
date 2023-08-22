@@ -25,7 +25,7 @@ const Node = {
     ]
   ],
   "icon": "node-red/db.svg",
-  "_order": 32
+  "_order": 33
 }
 
 module.exports = Node;
