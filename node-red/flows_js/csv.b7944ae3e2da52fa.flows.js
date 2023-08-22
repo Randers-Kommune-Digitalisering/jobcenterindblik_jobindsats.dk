@@ -7,22 +7,23 @@ const Node = {
   "sep": ";",
   "hdrin": true,
   "hdrout": "once",
-  "multi": "one",
+  "multi": "mult",
   "ret": "\\n",
   "temp": "",
   "skip": "0",
   "strings": true,
   "include_empty_strings": true,
   "include_null_values": true,
-  "x": 590,
-  "y": 600,
+  "x": 690,
+  "y": 460,
   "wires": [
     [
       "feaecf1d12d0d512",
-      "a992a34c30335c0a"
+      "a992a34c30335c0a",
+      "d30257e86a344b0a"
     ]
   ],
-  "_order": 15
+  "_order": 25
 }
 
 module.exports = Node;
