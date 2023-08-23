@@ -3,15 +3,8 @@ const Node = {
   "type": "change",
   "z": "971a7ae6df987a48",
   "g": "f08f7a1f88557ecd",
-  "name": "Create datatypes and create \\n the SQL CREATE TABLE \\n statement",
+  "name": "Compose SQL CREATE TABLE statement",
   "rules": [
-    {
-      "t": "set",
-      "p": "datatypes",
-      "pt": "msg",
-      "to": "$map(\t   payload[0],\t   function($v, $k) {\t       $each(\t           $v,\t           function($value, $key) {{\t    \"key\": $key,\t    \"mariadb_datatype\": \t    /* Check the type of the value */\t    $value ~> $type() = \"string\" ? \"VARCHAR(255)\" :\t    /* Check if the value is a number */\t    $value ~> $type() = \"number\" ? (\t        /* Check if the number is an integer */\t        $value ~> $floor() = $ ? \"INT\" :\t        /* Check if the number is a decimal */\t        $value ~> $floor() != $ ? \"DECIMAL(10,2)\" : undefined\t    ) :\t    $value ~> $type() = \"boolean\" ? \"BOOLEAN\" :\t    $value ~> $type() = \"null\" ? \"NULL\" :\t    /* Check for ISO dates */\t    /^([0-9]{4})(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)(3[01]|[12][0-9]|0[1-9])$|^(3[01]|[12][0-9]|0[1-9])(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)([0-9]{4})$/ ? \"DATE\" : undefined\t}            \t    }\t       )\t}\t)\t",
-      "tot": "jsonata"
-    },
     {
       "t": "set",
       "p": "sql",
@@ -25,15 +18,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 500,
-  "y": 900,
+  "x": 630,
+  "y": 860,
   "wires": [
     [
-      "40d6b2fa437eec4e"
+      "d263e0e74d046899"
     ]
   ],
   "info": "",
-  "_order": 54
+  "_order": 57
 }
 
 Node.info = `

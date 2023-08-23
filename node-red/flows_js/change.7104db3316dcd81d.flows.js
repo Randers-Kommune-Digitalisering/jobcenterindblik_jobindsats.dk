@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "971a7ae6df987a48",
   "g": "f08f7a1f88557ecd",
-  "name": "DROP existing table \\n if it exists",
+  "name": "Compose SQL DROP TABLE statement",
   "rules": [
     {
       "t": "set",
@@ -18,15 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 220,
-  "y": 820,
+  "x": 620,
+  "y": 800,
   "wires": [
     [
-      "214961241538a58d",
-      "ee5ab2c4a5187fbf"
+      "6ba5f585bc5a4924"
     ]
   ],
-  "_order": 55
+  "_order": 58
 }
 
 module.exports = Node;

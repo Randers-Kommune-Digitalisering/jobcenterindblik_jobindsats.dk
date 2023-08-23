@@ -1,8 +1,8 @@
 const Node = {
-  "id": "214961241538a58d",
+  "id": "7931e3e5d044a061",
   "type": "delay",
   "z": "971a7ae6df987a48",
-  "g": "f08f7a1f88557ecd",
+  "g": "de283ae5f6a3e969",
   "name": "Wait for DROP \\n to be sent to db",
   "pauseType": "delay",
   "timeout": "1",
@@ -16,14 +16,14 @@ const Node = {
   "drop": false,
   "allowrate": false,
   "outputs": 1,
-  "x": 260,
-  "y": 900,
+  "x": 720,
+  "y": 1700,
   "wires": [
     [
-      "569c302fab8c2bec"
+      "f6df1f5610e8a32a"
     ]
   ],
-  "_order": 56
+  "_order": 71
 }
 
 module.exports = Node;
