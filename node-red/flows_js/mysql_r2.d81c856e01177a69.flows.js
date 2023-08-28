@@ -1,9 +1,10 @@
 const Node = {
-  "id": "d3e1ea556ffa8a03",
+  "id": "d81c856e01177a69",
   "type": "mysql-r2",
   "z": "971a7ae6df987a48",
-  "g": "fe42eba3f9f607b1",
-  "name": "",
+  "d": true,
+  "g": "f08f7a1f88557ecd",
+  "name": "Run query",
   "host": "localhost",
   "database": "",
   "username": "",
@@ -14,14 +15,14 @@ const Node = {
   "waitForConnections": true,
   "connectionLimit": "10",
   "queueTimeout": "10000",
-  "x": 720,
-  "y": 820,
+  "x": 910,
+  "y": 920,
   "wires": [
     [
-      "faab89ef8586e7c9"
+      "bd2f508f937be7d3"
     ]
   ],
-  "_order": 34
+  "_order": 76
 }
 
 module.exports = Node;
