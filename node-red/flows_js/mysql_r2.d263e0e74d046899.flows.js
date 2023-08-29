@@ -14,14 +14,14 @@ const Node = {
   "waitForConnections": true,
   "connectionLimit": "10",
   "queueTimeout": "10000",
-  "x": 910,
-  "y": 860,
+  "x": 930,
+  "y": 680,
   "wires": [
     [
       "ed51858ad3036bfe"
     ]
   ],
-  "_order": 56
+  "_order": 34
 }
 
 module.exports = Node;

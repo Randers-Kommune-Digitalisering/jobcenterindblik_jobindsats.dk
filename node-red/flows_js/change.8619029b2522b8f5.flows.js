@@ -17,8 +17,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 395,
-  "y": 660,
+  "x": 405,
+  "y": 480,
   "wires": [
     [
       "84e09f687ce4f10e"
@@ -26,7 +26,7 @@ const Node = {
   ],
   "icon": "node-red/timer.svg",
   "l": false,
-  "_order": 47
+  "_order": 32
 }
 
 module.exports = Node;

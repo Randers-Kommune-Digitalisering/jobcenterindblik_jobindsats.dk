@@ -3,7 +3,7 @@ const Node = {
   "type": "inject",
   "z": "971a7ae6df987a48",
   "g": "3af220965c158c58",
-  "name": "timestamp",
+  "name": "Inject once",
   "props": [
     {
       "p": "payload"
@@ -11,19 +11,19 @@ const Node = {
   ],
   "repeat": "",
   "crontab": "",
-  "once": false,
-  "onceDelay": 0.1,
+  "once": true,
+  "onceDelay": "5",
   "topic": "",
   "payload": "",
   "payloadType": "date",
-  "x": 200,
-  "y": 340,
+  "x": 170,
+  "y": 140,
   "wires": [
     [
       "c57d2ed4e831e878"
     ]
   ],
-  "_order": 34
+  "_order": 19
 }
 
 module.exports = Node;

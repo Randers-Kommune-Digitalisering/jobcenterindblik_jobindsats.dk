@@ -17,15 +17,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1180,
-  "y": 460,
+  "x": 920,
+  "y": 280,
   "wires": [
     [
       "81e1189cb1c9435f"
     ]
   ],
   "icon": "node-red/db.svg",
-  "_order": 38
+  "_order": 23
 }
 
 module.exports = Node;

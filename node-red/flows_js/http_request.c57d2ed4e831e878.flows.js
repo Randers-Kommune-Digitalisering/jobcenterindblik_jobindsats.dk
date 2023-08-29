@@ -22,14 +22,14 @@ const Node = {
       "valueValue": "${TEST_API_KEY}"
     }
   ],
-  "x": 460,
-  "y": 340,
+  "x": 500,
+  "y": 120,
   "wires": [
     [
       "8de7a38fc93395b2"
     ]
   ],
-  "_order": 35
+  "_order": 20
 }
 
 module.exports = Node;
