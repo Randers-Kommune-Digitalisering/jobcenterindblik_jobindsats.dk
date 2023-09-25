@@ -14,11 +14,12 @@ const Node = {
   "waitForConnections": true,
   "connectionLimit": "10",
   "queueTimeout": "10000",
-  "x": 910,
+  "x": 930,
   "y": 740,
   "wires": [
     [
-      "bd2f508f937be7d3"
+      "bd2f508f937be7d3",
+      "c29eb8ad8a61ecdb"
     ]
   ],
   "_order": 42
