@@ -22,7 +22,7 @@ const Node = {
       "valueValue": "${TEST_API_KEY}"
     }
   ],
-  "x": 500,
+  "x": 520,
   "y": 120,
   "wires": [
     [

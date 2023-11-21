@@ -25,7 +25,7 @@ const Node = {
       "solarEvents": "sunrise,sunset"
     }
   ],
-  "x": 170,
+  "x": 190,
   "y": 80,
   "wires": [
     [
