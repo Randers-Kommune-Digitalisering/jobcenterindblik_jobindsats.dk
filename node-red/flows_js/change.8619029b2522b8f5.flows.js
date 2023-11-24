@@ -26,7 +26,7 @@ const Node = {
   ],
   "icon": "node-red/timer.svg",
   "l": false,
-  "_order": 37
+  "_order": 62
 }
 
 module.exports = Node;

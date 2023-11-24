@@ -29,6 +29,7 @@
         }
     ],
     "dependencies": {
+        "dayjs": "^1.11.10",
         "node-red": "3.0.2",
         "node-red-contrib-alasql": "^2.0.1",
         "node-red-contrib-cron-plus": "~2.1.0",
